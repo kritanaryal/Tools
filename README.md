@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
 
 subgraph group_catalog["Catalog Core"]
@@ -80,4 +81,15 @@ click node_reporting "[https://github.com/yogsec/hacking-tools/blob/main/README.
 click node_miscellaneous "[https://github.com/yogsec/hacking-tools/blob/main/README.md](https://github.com/yogsec/hacking-tools/blob/main/README.md)"
 click node_learning_resources "[https://github.com/yogsec/hacking-tools/blob/main/README.md](https://github.com/yogsec/hacking-tools/blob/main/README.md)"
 
-classDef toneNeutral fill:#f8fafc,stroke:#334155,stroke-width:1.5px,color:#0f1
+classDef toneNeutral fill:#f8fafc,stroke:#334155,stroke-width:1.5px,color:#0f172a
+classDef toneBlue fill:#dbeafe,stroke:#2563eb,stroke-width:1.5px,color:#172554
+classDef toneAmber fill:#fef3c7,stroke:#d97706,stroke-width:1.5px,color:#78350f
+classDef toneMint fill:#dcfce7,stroke:#16a34a,stroke-width:1.5px,color:#14532d
+classDef toneRose fill:#ffe4e6,stroke:#e11d48,stroke-width:1.5px,color:#881337
+classDef toneIndigo fill:#e0e7ff,stroke:#4f46e5,stroke-width:1.5px,color:#312e81
+classDef toneTeal fill:#ccfbf1,stroke:#0f766e,stroke-width:1.5px,color:#134e4a
+class node_catalog_root toneBlue
+class node_info_gathering,node_vuln_analysis,node_web_analysis toneAmber
+class node_exploitation,node_wireless,node_sniffing,node_password_attacks,node_social_engineering,node_stress_testing toneMint
+class node_forensics,node_reverse_engineering,node_reporting toneRose
+class node_miscellaneous,node_learning_resources,node_practitioner,node_nmap,node_burp,node_metasploit,node_wireshark,node_ghidra,node_bugboard toneIndigo
